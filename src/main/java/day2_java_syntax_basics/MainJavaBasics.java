@@ -9,10 +9,24 @@ public class MainJavaBasics {
     public static void main(String[] args) {
 
         //this is an one line comment
+
+
+        sayMessage();
         System.out.println();
+
+        //calling without static keyword
+        Message message = new Message();
+        message.messageFromOtherClass();
+        System.out.println();
+        //calling with static keyword
+        Message.messageWithStaticKeyword();
 
     }
 
-    //say hello
+    private static void sayMessage() {
+        System.out.println("Say hello to the main class.");
+    }
+
+
 
 }
